@@ -1,4 +1,4 @@
-#Writing siiimple funciton for yearly lake level (low, normal, high) Golden
+#Writing siiimple funciton for yearly lake level (low, normal, high)
 #' @param O is outflow in m^3/yr (dam release)
 #' @param I is inflow in m^3/yr (south fork of the san joaquin)
 #' @param initial is the initial lake level in m^3
