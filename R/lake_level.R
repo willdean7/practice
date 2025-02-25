@@ -6,7 +6,6 @@
 #' @param max_level is the maximum lake level in m^3
 #' @param P is precipitation in m/yr
 #' @param E is evaporation in m/yr
-#' @param current is current lake level in m^3
 #' @return current
 
 lake_level <- function(initial, I, O, P, E, min_level=8000000, max_level=80000000) {
