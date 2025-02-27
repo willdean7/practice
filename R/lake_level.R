@@ -40,3 +40,5 @@ lake_level <- function(initial, I, O, P, E, min_level=8000000, max_level=8000000
   
   return(level)  # Return the current lake level after all iterations
 }
+
+# quick test comment for Github conflict - Bella
