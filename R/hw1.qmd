@@ -1,0 +1,38 @@
+---
+title: "Lake Level"
+authorL Will
+format: 
+  html:
+    code-fold: show
+    toc: true
+    number-sections: true
+    embed-resources: true
+execute:
+  echo: true
+  message: false
+  warning: false
+---
+
+## Lake Level Function
+
+Here I will demonstrate how to use the simple lake_level function to estimate lake level.
+
+```{r}
+#load in the fxn
+source("lake_level.R")
+```
+
+Now i'll make random inputs and see what happens
+
+```{r}
+#Test the function
+initial_level <- 8000000  # Initial lake level in m^3
+I <- c(1000000, 2000000, 3000000)  # Inflows in m^3/yr
+O <- c(500000, 600000, 700000)  # Outflows in m^3/yr
+precipitation <- c(500000, 600000, 700000)  # Precipitation in m/yr
+evaporation <- c(200000, 300000, 400000)  # Evaporation in m/yr
+
+lake_level(initial_level, I, O, precipitation, evaporation)
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
